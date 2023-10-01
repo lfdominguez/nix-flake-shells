@@ -11,6 +11,8 @@
             config.allowUnfress = true;
         };
     in {
-        platformio = import ./platformio.nix {};
+        platformio = import ./platformio.nix {
+                inherit pkgs
+            };
     };
 }
