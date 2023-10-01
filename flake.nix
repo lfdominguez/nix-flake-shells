@@ -12,7 +12,7 @@
         };
     in {
         platformio = import ./platformio.nix {
-                inherit pkgs
-            };
+            inherit pkgs;
+        };
     };
 }
