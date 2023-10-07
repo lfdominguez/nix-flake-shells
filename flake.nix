@@ -6,7 +6,7 @@
         (system:
           let pkgs = nixpkgs.legacyPackages.${system}; in
           {
-            devShells.platformio = import ./platformio.nix { inherit pkgs; };
+            devShells.platformio = import ./shells/platformio.nix { inherit pkgs; };
           }
         );
 }
