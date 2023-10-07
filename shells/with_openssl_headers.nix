@@ -8,5 +8,6 @@ mkShell {
 
   shellHook = ''
     export PATH="${openssl.out}/bin:$PATH"
+    export PKG_CONFIG_PATH="${openssl.dev}/lib/"
   '';
 }
