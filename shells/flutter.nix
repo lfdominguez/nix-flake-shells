@@ -4,6 +4,8 @@ mkShell {
   buildInputs = [
     flutter
     cmake
+    ninja
+    gcc
   ];
 
   shellHook = ''
