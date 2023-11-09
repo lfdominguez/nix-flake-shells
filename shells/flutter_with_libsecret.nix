@@ -10,9 +10,10 @@ mkShell {
     libsecret
     pcre2
     gtk3
+    util-linux
   ];
 
   shellHook = ''
-    export PKG_CONFIG_PATH=${gtk3.dev}/lib/pkgconfig:${pcre2.dev}/lib/pkgconfig:${libsecret.dev}/lib/pkgconfig:$PKG_CONFIG_PATH
+    export PKG_CONFIG_PATH=${util-linux.dev}/lib/pkgconfig:${gtk3.dev}/lib/pkgconfig:${pcre2.dev}/lib/pkgconfig:${libsecret.dev}/lib/pkgconfig:$PKG_CONFIG_PATH
   '';
 }
