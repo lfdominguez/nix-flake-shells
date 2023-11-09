@@ -8,6 +8,7 @@ mkShell {
     gcc
     pkg-config
     libsecret
+    pcre2
   ];
 
   shellHook = ''
